@@ -1,0 +1,1 @@
+export const returnData = response => response.data

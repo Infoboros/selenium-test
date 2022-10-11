@@ -1,0 +1,366 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    height: 100%;
+    width: 65%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    border-radius: 100%;
+}
+
+
+
+.menu {
+    height: 95%;
+    width: 20%;
+
+    margin-right: 1%;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.menu .actions {
+    height: 50%;
+    width: 90%;
+}
+
+.menu .actions img {
+    height: 7%;
+    margin-left: 5%;
+}
+
+.menu .actions nav button {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: inherit;
+    border: none;
+    font-size: 1.5vw;
+
+    padding: 5%;
+    margin: 2%;
+}
+
+.menu .actions nav i {
+    font-size: 1.5vw;
+    width: 20%;
+}
+
+.menu .actions nav button:hover {
+    cursor: pointer;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+}
+
+.menu .actions nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+.sendTwit {
+    width: 100%;
+    padding: 4%;
+
+    background-color: #41ABE1;
+
+    color: white;
+    font-size: 1.4vw;
+    font-weight: bold;
+
+
+    border: none;
+    border-radius: 50px;
+}
+
+.sendTwit {
+    cursor: pointer;
+    background-color: #41ABE1;
+}
+
+.sendTwit:hover {
+    background-color: #288fc0;
+}
+
+.menu .profile {
+    height: 4%;
+    width: 95%;
+    font-size: 1vw;
+    padding: 5%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu .profile:hover {
+    background-color: #e0e0e0;
+    border-radius: 50px;
+}
+
+.menu .profile .name  h3 {
+    margin: 0;
+}
+
+.menu .profile .name  h4 {
+    color: #a2a2a2;
+}
+
+.menu .profile button {
+    background-color: inherit;
+    border: none;
+    font-size: 2vw;
+}
+
+.menu .profile button:hover {
+    cursor: pointer;
+}
+
+.feed {
+    width: 55%;
+    height: 100%;
+
+    overflow: scroll;
+
+    border: solid #e0e0e0 1px;
+    border-top: none;
+    border-bottom: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feed .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 95%;
+
+    font-size: 1vw;
+}
+
+.feed .title button {
+    border: none;
+    border-radius: 50px;
+
+    font-size: 1.5vw;
+    background-color: #fff;
+
+    height: 1.5em;
+}
+
+.feed .title button:hover {
+    cursor: pointer;
+    background-color: #e8e8e8;
+}
+
+.feed .twit {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+
+    width: 100%;
+    padding: 2%;
+
+    border: solid #e0e0e0 1px;
+}
+
+.feed .twit img {
+    width: 8%;
+}
+
+.feed .twit .input {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.feed .twit .input form {
+    display: flex;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+
+    margin-bottom: 25px;
+}
+
+.feed .twit .input form input {
+    height: 100%;
+    width: 94%;
+
+    border: none;
+
+    font-size: 1.5vw;
+}
+
+.feed .twit .input .actions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-top: solid #e0e0e0 1px;
+    padding-top: 2%;
+}
+
+.feed .twit .input .actions .pictograms {
+    width: 64%;
+}
+
+.feed .twit .input .actions .pictograms button{
+    background-color: #fff;
+    border: none;
+    color: #1e84b4;
+    font-size: 1.3vw;
+}
+
+.feed .twit .input .actions .sendTwit {
+    width: 30%;
+    padding: 1%;
+}
+
+.feed .listTwits {
+    width: 100%;
+}
+
+.feed .listTwits .twit img {
+    width: 7%;
+}
+
+.feed .listTwits .twit .content {
+    width: 87%;
+}
+
+.feed .listTwits .twit .title {
+    display: flex;
+    justify-content: start;
+}
+
+.feed .listTwits .twit .content h3 {
+    margin: 0 2% 0 0;
+}
+
+.feed .listTwits .twit .content h4 {
+    margin: 0 1% 0 0;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.feed .listTwits .twit .content .text {
+    font-size: 1vw;
+}
+
+.feed .listTwits .twit .actions {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 90%;
+
+    margin-top: 2%;
+}
+
+.feed .listTwits .twit .actions button{
+    background-color: #fff;
+    border: none;
+
+    font-size: 1.1vw;
+}
+
+.feed .listTwits .twit .actions button:hover{
+    cursor: pointer;
+    color: #41ABE1;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 25%;
+    height: 97%;
+    padding: 0 1%;
+}
+
+.search .searchString {
+    height: 3.5%;
+    padding: 5%;
+    border-radius: 50px;
+
+    background-color: #e8e8e8;
+}
+
+.search .searchString form {
+    height: 100%;
+}
+
+.search .searchString input {
+    height: 100%;
+    font-size: 1vw;
+
+    border: none;
+    background-color: inherit;
+}
+
+.search nav ul {
+    list-style: none;
+    padding: 0;
+
+    white-space: nowrap;
+    font-size: 1vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+
+}
+
+.search nav ul li {
+    color: grey;
+    margin: 0.3% 1%;
+}
+
+.search nav ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.search nav ul li a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+
+    .feed .listTwits .twit .content .text {
+        font-size: 2vw;
+    }
+    main {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .feed {
+        width: 100%;
+    }
+    .search {
+        display: none;
+    }
+}
