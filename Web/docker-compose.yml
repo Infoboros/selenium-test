@@ -35,7 +35,6 @@ services:
     container_name: app_nginx
     ports:
       - 80:80
-      - 81:81
     volumes:
       - static_volume:/home/app/static
       - ./nginx:/etc/nginx/conf.d

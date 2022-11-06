@@ -11,7 +11,8 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI(
     title='Twitter',
     description="API для приложения",
-    version="0.0.1"
+    version="0.0.1",
+    root_path='/api'
 )
 
 app.add_middleware(
