@@ -1,5 +1,5 @@
 <template>
-  <button @click="handleAuthClick">
+  <button id="test_login" @click="handleAuthClick">
     Войти
   </button>
 </template>

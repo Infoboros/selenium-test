@@ -2,11 +2,11 @@
   <section class="mainInfo">
     <h1>Чтобы приступить, введите свой адрес электронной почты и пароль.</h1>
     <form @submit.prevent="handleAuthClick()">
-      <input type="email" placeholder="Адрес электронной почты" v-model="user.username">
+      <input id="test_username" type="email" placeholder="Адрес электронной почты" v-model="user.username">
     </form>
     <br>
     <form @submit.prevent="handleAuthClick()">
-      <input type="password" placeholder="Пароль" v-model="user.password">
+      <input id="test_password" type="password" placeholder="Пароль" v-model="user.password">
     </form>
 
     <h2 class="alert" v-if="badLogin">Указанные данные для авторизации неверные.</h2>

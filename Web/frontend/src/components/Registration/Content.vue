@@ -2,12 +2,12 @@
   <section class="mainInfo">
     <form @submit.prevent="handleRegister()">
       <h1>Создайте учетную запись</h1>
-      <input name="firstName"  type="text" placeholder="Имя пользователя" v-model="userData.nick_name">
-      <input name="secondName" type="text" placeholder="ID пользователя" v-model="userData.id_name">
+      <input id="test_username" name="firstName"  type="text" placeholder="Имя пользователя" v-model="userData.nick_name">
+      <input id="test_user_id" name="secondName" type="text" placeholder="ID пользователя" v-model="userData.id_name">
 
       <h3>Данные для аутентификации</h3>
-      <input name="login"  type="email" placeholder="Email" v-model="userData.email">
-      <input name="password" type="password" placeholder="Пароль" v-model="userData.password">
+      <input id="test_email" name="login"  type="email" placeholder="Email" v-model="userData.email">
+      <input id="test_password" name="password" type="password" placeholder="Пароль" v-model="userData.password">
 
       <h3 class="bad" v-if="badRegister">Возникла ошибка в ходе регистрации.</h3>
     </form>

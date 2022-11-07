@@ -1,7 +1,7 @@
 <template>
   <section class="auth">
-    <AuthButton text="Зарегистрироваться" :onClick="handleRegisterClick"/>
-    <AuthButton text="Войти" :onClick="handleAuthClick"/>
+    <AuthButton id="test_registration" text="Зарегистрироваться" :onClick="handleRegisterClick"/>
+    <AuthButton id="test_login" text="Войти" :onClick="handleAuthClick"/>
   </section>
 </template>
 

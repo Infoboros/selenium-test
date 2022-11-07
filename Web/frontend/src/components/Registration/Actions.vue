@@ -1,5 +1,5 @@
 <template>
-  <button @click="handleRegisterClick">
+  <button id="test_register" @click="handleRegisterClick">
     Зарегистрироваться
   </button>
 </template>
