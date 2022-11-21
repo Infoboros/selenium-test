@@ -1,10 +1,11 @@
 <template>
-  <div class="notificationFeed">
+  <div class="notificationFeed" id="test_notification_feed">
     <Title/>
     <NotificationItem v-for="(item, index) in eventsList" :key="index"
                       :i-class="item.iClass"
                       :title="item.title"
                       :text="item.text"
+                      id="test_notification"
     />
   </div>
 </template>

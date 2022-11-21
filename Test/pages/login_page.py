@@ -1,3 +1,5 @@
+from time import sleep
+
 from pages.page import Page
 from pages.feed_page import FeedPage
 
@@ -12,5 +14,13 @@ class LoginPage(Page):
 
     def login(self):
         self.button_click('test_login')
-        # TODO эксепшн если не вошло
+
+        sleep(2)
+        if self._get_path_from_relative('login') == self.driver.current_url:
+            raise self.LoginException()
+
         return FeedPage(self.driver)
+
+    class LoginException(Page.PageException):
+        def __init__(self):
+            super().__init__('Ошибка во время аутентификации')

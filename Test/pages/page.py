@@ -20,8 +20,8 @@ class Page(ABC):
         )
 
     def button_click(self, button_id: str):
-        login_button = self.driver.find_element(value=button_id)
-        login_button.click()
+        button = self.driver.find_element(value=button_id)
+        button.click()
 
     def input_send_keys(self, input_id: str, keys: str):
         input_field = self.driver.find_element(value=input_id)

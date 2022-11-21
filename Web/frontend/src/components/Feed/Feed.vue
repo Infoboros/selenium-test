@@ -1,5 +1,5 @@
 <template>
-  <section class="listTwits">
+  <section class="listTwits" id="test_feed">
     <Twit v-for="twit in feed" :twitData="twit" :like="like" :repost="repost" :key="twit.id"/>
   </section>
 </template>

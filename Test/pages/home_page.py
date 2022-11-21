@@ -1,3 +1,5 @@
+from time import sleep
+
 from pages.page import Page
 from pages.login_page import LoginPage
 from pages.register_page import RegisterPage

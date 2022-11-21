@@ -4,10 +4,10 @@
     <div class="content">
       <div class="title">
 
-        <h3>
+        <h3 id="test_nick_name_twit">
           {{ author.nick_name }}
         </h3>
-        <h4>
+        <h4 id="test_id_name_twit">
           @{{ author.id_name }}
         </h4>
         <h4>·</h4>
@@ -15,17 +15,17 @@
           {{ twit_time }}
         </h4>
       </div>
-      <div class="text">
+      <div class="text" id="test_text">
         {{ twitData.text }}
       </div>
       <div class="actions">
-        <button :class="{mySelfAction: myRepost}" @click="repost(twitData.id, myId)">
+        <button :class="{mySelfAction: myRepost}" @click="repost(twitData.id, myId)" id="test_repost">
           <i class="fa fa-retweet" aria-hidden="true"></i>
-          <template v-if="repostedUsers.length">{{ repostedUsers.length }}</template>
+          <span v-if="repostedUsers.length" id="test_repost_count">{{ repostedUsers.length }}</span>
         </button>
-        <button :class="{mySelfAction: myLike}" @click="like(twitData.id, myId)">
+        <button :class="{mySelfAction: myLike}" @click="like(twitData.id, myId)" id="test_like">
           <i class="fa fa-heart-o" aria-hidden="true"></i>
-          <template v-if="likedUsers.length">{{ likedUsers.length }}</template>
+          <span v-if="likedUsers.length" id="test_like_count">{{ likedUsers.length }}</span>
         </button>
         <button><i class="fa fa-share" aria-hidden="true"></i></button>
       </div>

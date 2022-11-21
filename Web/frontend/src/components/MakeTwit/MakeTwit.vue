@@ -3,10 +3,10 @@
     <img :src="userData.avatar" alt="avatar" class="avatar">
     <div class="input">
       <form @submit.prevent="makeTwit()">
-        <textarea placeholder="Что происходит?" rows="5" v-model="text"/>
+        <textarea placeholder="Что происходит?" rows="5" v-model="text" id="test_text_twit_field"/>
       </form>
       <div class="actions">
-        <button class="sendTwit" @click="makeTwit">
+        <button class="sendTwit" @click="makeTwit" id="test_make_twit_button">
           Твитнуть
         </button>
       </div>
