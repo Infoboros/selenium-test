@@ -2,10 +2,10 @@
   <div class="profileInfo">
     <img :src="userData.avatar" alt="avatar" class="avatar">
     <div class="content">
-      <h2>
+      <h2 id="test_nick_name">
         {{ userData.nick_name }}
       </h2>
-      <h3>
+      <h3 id="test_id_name">
         @{{ userData.id_name }}
       </h3>
       <p class="registerDate">

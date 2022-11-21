@@ -10,6 +10,7 @@
             :text="item.text"
             :redirectTo="item.redirectTo"
             :active="item.activeId === active"
+            :activeId="item.activeId"
         />
       </ul>
     </nav>

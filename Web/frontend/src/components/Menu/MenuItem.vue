@@ -1,6 +1,6 @@
 <template>
   <li>
-    <button @click="handleOnClick" :class="{active}">
+    <button @click="handleOnClick" :class="{active}" :id="activeId">
       <i :class="iClass" aria-hidden="true"></i>
       {{text}}
     </button>
@@ -14,7 +14,8 @@ export default {
       'iClass',
       'text',
       'redirectTo',
-      'active'
+      'active',
+      "activeId"
   ],
   methods: {
     handleOnClick(){

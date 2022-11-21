@@ -1,3 +1,5 @@
+from time import sleep
+
 from pages.page import Page
 from pages.feed_page import FeedPage
 
@@ -18,5 +20,13 @@ class RegisterPage(Page):
 
     def register(self):
         self.button_click('test_register')
-        # TODO эксепшн если не зарегался
+
+        sleep(2)
+        if self._get_path_from_relative('registration') == self.driver.current_url:
+            raise self.RegistrationException()
+
         return FeedPage(self.driver)
+
+    class RegistrationException(Page.PageException):
+        def __init__(self):
+            super().__init__('Ошибка во время регистрации')

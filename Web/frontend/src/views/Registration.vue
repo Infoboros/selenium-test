@@ -41,7 +41,11 @@ export default {
   methods: {
     handleRegister(){
       this.$store.dispatch('auth/register', this.userData)
-          .then(() => this.$router.push('/feed'))
+          .then(
+              () =>
+                  this.$store.dispatch('auth/login', {...this.userData, username: this.userData['email']})
+                      .then(() => this.$router.push('/feed'))
+          )
           .catch(() => this.badRegister = true)
     }
   }
