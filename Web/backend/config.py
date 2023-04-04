@@ -21,8 +21,9 @@ class DBPaths:
     base = ['db.base.models']
     twit = ['db.twit.models']
     events = ['db.events.models']
+    admin = ['admin.models']
 
-    all_paths = ["aerich.models"] + base + users + twit + events
+    all_paths = ["aerich.models"] + base + users + twit + events + admin
 
 
 class MediaPath:

@@ -16,3 +16,6 @@ class Twit(models.Model):
 
     class Meta:
         ordering = ["-datetime"]
+
+    def __str__(self):
+        return self.text

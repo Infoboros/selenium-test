@@ -15,6 +15,8 @@ class TypeEvent(models.Model):
     class PydanticMeta:
         include = ('id', 'description')
 
+    def __str__(self):
+        return self.description
 
 class Event(models.Model):
     id = fields.IntField(pk=True)

@@ -25,6 +25,9 @@ class UserModel(TortoiseBaseUserModel):
     class PydanticMeta:
         include = ('id', 'nick_name', 'id_name', 'date_registration', 'avatar')
 
+    def __str__(self):
+        return self.email
+
 
 Tortoise.init_models(DBPaths.users, 'models')
 
