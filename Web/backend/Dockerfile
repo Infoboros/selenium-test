@@ -14,4 +14,4 @@ RUN apt-get update && apt-get install netcat -y
 COPY . /home/app
 
 RUN ["chmod", "+x", "/home/app/scripts/entrypoint.sh"]
-ENTRYPOINT ["/home/app/scripts/entrypoint.sh"]
+#ENTRYPOINT ["/home/app/scripts/entrypoint.sh"]
